@@ -1,223 +1,281 @@
 <!DOCTYPE html>
 <html lang="es">
-
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bitácora Cultural y Ciudadana</title>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;700&family=Playfair+Display:wght@700&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --primary: #2c3e50;
+            --secondary: #e74c3c;
+            --accent: #3498db;
+            --bg: #f4f7f6;
+            --text: #333;
+            --white: #ffffff;
+        }
 
-<title>Constitución Política de Colombia 1991</title>
+        body {
+            font-family: 'Montserrat', sans-serif;
+            background-color: var(--bg);
+            color: var(--text);
+            margin: 0;
+            line-height: 1.6;
+        }
 
-<style>
+        header {
+            background: var(--primary);
+            color: var(--white);
+            padding: 3rem 1rem;
+            text-align: center;
+            box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+        }
 
-body{
-font-family: Arial, Helvetica, sans-serif;
-margin:0;
-background:#f4f6fb;
-color:#333;
-}
+        header h1 {
+            font-family: 'Playfair Display', serif;
+            font-size: 2.5rem;
+            margin: 0;
+        }
 
-header{
-background:#1f3c88;
-color:white;
-padding:30px;
-text-align:center;
-}
+        nav {
+            background: #1a252f;
+            padding: 1rem;
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+            text-align: center;
+        }
 
-nav{
-background:#162d63;
-padding:12px;
-text-align:center;
-}
+        nav a {
+            color: white;
+            text-decoration: none;
+            margin: 0 10px;
+            font-size: 0.9rem;
+            font-weight: bold;
+            transition: color 0.3s;
+        }
 
-nav a{
-color:white;
-margin:0 10px;
-text-decoration:none;
-font-weight:bold;
-}
+        nav a:hover {
+            color: var(--secondary);
+        }
 
-nav a:hover{
-text-decoration:underline;
-}
+        .container {
+            max-width: 1000px;
+            margin: 2rem auto;
+            padding: 0 20px;
+        }
 
-.container{
-max-width:1000px;
-margin:auto;
-padding:30px;
-}
+        section {
+            background: var(--white);
+            border-radius: 8px;
+            padding: 2.5rem;
+            margin-bottom: 3rem;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.05);
+        }
 
-.card{
-background:white;
-padding:25px;
-margin-bottom:30px;
-border-radius:10px;
-box-shadow:0 4px 10px rgba(0,0,0,0.08);
-}
+        h2 {
+            border-bottom: 3px solid var(--secondary);
+            padding-bottom: 10px;
+            color: var(--primary);
+            font-family: 'Playfair Display', serif;
+        }
 
-h2{
-color:#1f3c88;
-}
+        h3 {
+            color: var(--accent);
+            margin-top: 1.5rem;
+        }
 
-footer{
-background:#1f3c88;
-color:white;
-text-align:center;
-padding:20px;
-margin-top:40px;
-}
+        .highlight {
+            background: #fdf2f2;
+            border-left: 5px solid var(--secondary);
+            padding: 1rem;
+            margin: 1rem 0;
+            font-style: italic;
+        }
 
-</style>
+        .card-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 20px;
+            margin-top: 1rem;
+        }
+
+        .card {
+            border: 1px solid #eee;
+            padding: 1.5rem;
+            border-radius: 5px;
+            background: #fafafa;
+        }
+
+        footer {
+            text-align: center;
+            padding: 2rem;
+            background: var(--primary);
+            color: white;
+            margin-top: 4rem;
+        }
+
+        /* Estilo para imágenes (Placeholders) */
+        .img-placeholder {
+            width: 100%;
+            height: 200px;
+            background: #ddd;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin-bottom: 15px;
+            border-radius: 5px;
+            color: #666;
+            font-weight: bold;
+        }
+    </style>
 </head>
-
 <body>
 
 <header>
-<h1>Constitución Política de Colombia de 1991</h1>
-<p>Trabajo académico</p>
+    <h1>Bitácora de Ciudadanía y Cultura</h1>
+    <p>Reflexiones sobre Constitución, Arte, Medioambiente y Sociedad</p>
 </header>
 
 <nav>
-<a href="#t1">Tarea 1</a>
-<a href="#t2">Tarea 2</a>
-<a href="#t3">Tarea 3</a>
-<a href="#t4">Tarea 4</a>
-<a href="#t5">Tarea 5</a>
-<a href="#t6">Tarea 6</a>
-<a href="#t7">Tarea 7</a>
-<a href="#t8">Tarea 8</a>
-<a href="#t9">Tarea 9</a>
-<a href="#t10">Tarea 10</a>
+    <a href="#t1">Constitución</a>
+    <a href="#t2">Esferas</a>
+    <a href="#t3">Medioambiente</a>
+    <a href="#t4">Música</a>
+    <a href="#t6">Derechos</a>
+    <a href="#t7">Ética Animal</a>
+    <a href="#t8">Liderazgo</a>
+    <a href="#t9">Turismo</a>
 </nav>
 
 <div class="container">
 
-<section class="card" id="t1">
-<h2>Tarea 1</h2>
+    <section id="t1">
+        <h2>1. El Preámbulo de la Constitución de 1991</h2>
+        <p>El ordenamiento constitucional colombiano se fundamenta en la <strong>soberanía popular</strong> como eje axial de legitimidad. La invocación de la protección divina se reconoce como parte de la cosmovisión e idiosincrasia de la sociedad civil, sin afectar la laicidad técnica del Estado.</p>
+        <div class="highlight">
+            "La Carta Magna de 1991 armoniza la voluntad democrática con la organización administrativa y fiscal de la nación."
+        </div>
+        <p>Estructura: 13 títulos, 380 artículos permanentes y 67 transitorios, divididos en una parte dogmática y una orgánica.</p>
+    </section>
 
-<p><strong>¿Se entiende que el poder en Colombia proviene de Dios o del Pueblo?</strong></p>
+    <section id="t2">
+        <h2>2. Esfera Pública y Esfera Privada</h2>
+        <div class="card-grid">
+            <div class="card">
+                <div class="img-placeholder">Imagen: Teatro Mayor</div>
+                <h3>Esfera Pública</h3>
+                <p><strong>El Consumo Cultural como Hecho Colectivo:</strong> La asistencia a la ópera representa la inmersión en espacios de formación del gusto estético y conexión con la herencia artística global.</p>
+            </div>
+            <div class="card">
+                <div class="img-placeholder">Imagen: Coro con Amigos</div>
+                <h3>Esfera Privada</h3>
+                <p><strong>El Canto como Refugio Personal:</strong> Espacio de conexión interior y construcción de identidad a través de la armonía y la escucha activa con seres queridos.</p>
+            </div>
+        </div>
+    </section>
 
-<p>
-El poder en Colombia proviene del pueblo. Aunque el preámbulo menciona la protección de Dios, la Constitución establece que la soberanía reside exclusivamente en el pueblo, lo que significa que los ciudadanos son la fuente de autoridad del Estado.
-</p>
+    <section id="t3">
+        <h2>3. Medioambiente: El Jaguar y la Mariposa</h2>
+        <h3>Museo Nacional de Colombia</h3>
+        <p>Fundado en 1823, es la institución más antigua del país. Su misión es la protección y difusión del patrimonio en sus cuatro colecciones: Arte, Historia, Arqueología y Etnografía.</p>
+        
+        <h3>Chiribiquete: Patrimonio de la Humanidad</h3>
+        <p>La exposición destaca la coexistencia de la megabiodiversidad y el legado arqueológico. El jaguar (fuerza terrestre) y la mariposa (fragilidad aérea) simbolizan el equilibrio del ecosistema.</p>
+        
+        <div class="card">
+            <h4>Conciencia Ecológica</h4>
+            <ul>
+                <li>Consumo Crítico y trazabilidad.</li>
+                <li>Gestión de residuos (Economía Circular).</li>
+                <li>Educación continua y activismo ciudadano.</li>
+            </ul>
+        </div>
+    </section>
 
-<p><strong>¿Está usted de acuerdo con dicho contenido? Sustente.</strong></p>
+    <section id="t4">
+        <h2>4. Música e Identidad: Joe Arroyo</h2>
+        <p><strong>Joe Arroyo (1955-2011):</strong> Creador del "Joeson" y símbolo del orgullo afrocolombiano. Revolucionó la música tropical con su orquesta <em>La Verdad</em>.</p>
+        <div class="highlight">
+            "La Rebelión (1986): Un himno de resistencia que narra la historia de libertad frente a la opresión esclavista en el siglo XVII."
+        </div>
+        <h3>Recomendación: Totó la Momposina</h3>
+        <p>La "cantadora" por excelencia, rescatista de los ritmos del río Magdalena como la cumbia y el bullerengue. Obra clave: <em>"El Pescador"</em>.</p>
+    </section>
 
-<p>
-Sí estoy de acuerdo, porque en una democracia el poder debe venir de los ciudadanos. Son las personas quienes eligen a sus representantes y quienes tienen el derecho de participar en las decisiones que afectan al país.
-</p>
+    <section id="t6">
+        <h2>6. Protección de los Derechos Humanos</h2>
+        <div class="card-grid">
+            <div class="card">
+                <h4>Acción de Tutela</h4>
+                <p>Protección rápida de derechos básicos. (Ej: Entrega de medicamentos).</p>
+            </div>
+            <div class="card">
+                <h4>Derecho de Petición</h4>
+                <p>Solicitud de información con respuesta obligatoria en 15 días.</p>
+            </div>
+            <div class="card">
+                <h4>Habeas Corpus</h4>
+                <p>Botón de pánico ante arrestos ilegales (36 horas para resolver).</p>
+            </div>
+            <div class="card">
+                <h4>Acciones Populares y de Grupo</h4>
+                <p>Protección del medio ambiente o indemnización de colectivos (mín. 20 personas).</p>
+            </div>
+        </div>
+        <h3>Análisis Crítico</h3>
+        <p>Aunque Colombia tiene herramientas "brutales", el sistema está colapsado. Es necesario que las instituciones funcionen por derecho propio y no solo bajo amenaza de un juez.</p>
+    </section>
 
-</section>
+    <section id="t7">
+        <h2>7. Ética Animal y Ciudadanía</h2>
+        <h3>Corridas de Toros</h3>
+        <p>Acuerdo total con su prohibición. El maltrato no es cultura; la tortura por diversión es éticamente injustificable en una sociedad moderna.</p>
+        <h3>Uso de Pólvora</h3>
+        <p>Riesgo de salud pública. Afecta el bienestar animal (infartos y pánico) y la seguridad humana. Se proponen alternativas como drones o luces LED.</p>
+    </section>
 
+    <section id="t8">
+        <h2>8. Liderazgos Contemporáneos</h2>
+        <div class="card-grid">
+            <div class="card">
+                <h4>Claudia López (+)</h4>
+                <p>Transparencia y enfoque en infraestructura social (Manzanas del Cuidado).</p>
+            </div>
+            <div class="card">
+                <h4>Álvaro Uribe Vélez (-)</h4>
+                <p>Asociado a la polarización social y cuestionamientos en DD.HH.</p>
+            </div>
+            <div class="card">
+                <h4>Barack Obama (+)</h4>
+                <p>Diplomacia multilateral, oratoria inspiradora y expansión de derechos civiles.</p>
+            </div>
+            <div class="card">
+                <h4>Donald Trump (-)</h4>
+                <p>Populismo disruptivo y cuestionamiento de las instituciones democráticas.</p>
+            </div>
+        </div>
+    </section>
 
-<section class="card" id="t2">
-<h2>Tarea 2</h2>
-
-<p>
-La Constitución de 1991 establece un Estado social de derecho que reconoce los derechos fundamentales de los ciudadanos. Esto significa que el Estado tiene la responsabilidad de garantizar condiciones de vida dignas para todas las personas.
-</p>
-
-</section>
-
-
-<section class="card" id="t3">
-<h2>Tarea 3</h2>
-
-<p>
-La Constitución busca organizar el Estado colombiano, establecer derechos y deberes de los ciudadanos y garantizar la participación democrática.
-</p>
-
-</section>
-
-
-<section class="card" id="t4">
-
-<h2>Tarea 4: Música y más en Colombia.</h2>
-
-<p>
-La tarea se dedica al aporte de los artistas y la cultura no solo al entretenimiento sino a la comprensión de nuestro país. Consiste e este caso en escuchar una canción del popular cantante Joe Arroyo y responder:
-</p>
-
-<h3>p. ¿Quién fue Joe Arroyo?</h3>
-
-<p>
-Álvaro José Arroyo González, conocido mundialmente como Joe Arroyo (1955–2011), fue uno de los artistas más grandes y prolíficos de la música colombiana. Nacido en Cartagena, fue un cantante y compositor que revolucionó la música tropical al crear su propio estilo musical: el "Joeson", una mezcla vibrante de salsa, cumbia, merengue y ritmos africanos como el soukous.
-</p>
-
-<p>
-A lo largo de su carrera, pasó por agrupaciones legendarias como Fruko y sus Tesos antes de fundar su propia orquesta, La Verdad. Es recordado no solo por su voz única y su capacidad de improvisación, sino por ser un símbolo del orgullo afrocolombiano y del Caribe.
-</p>
-
-<h3>2.⁠ ⁠¿De qué se trata la canción "La Rebelión" y cuál es su legado?</h3>
-
-<p><strong>La canción:</strong></p>
-
-<p>
-Publicada en 1986, "La Rebelión" es mucho más que un éxito de salsa para bailar; es una crónica histórica y social. La letra narra una historia ambientada en la Cartagena del siglo XVII [00:39]. Describe la llegada de los barcos esclavistas africanos y la "esclavitud perpetua" que sufrieron [00:53].
-</p>
-
-<p>
-El núcleo de la canción es el relato de un matrimonio africano esclavizado por un español. Cuando el esclavista maltrata y golpea a la mujer, el hombre se rebela para defenderla [01:49]. El famoso coro "No le pegue a la negra" [02:21] se convierte en un grito de libertad, dignidad y resistencia contra el abuso y la opresión racial.
-</p>
-
-<p><strong>Su legado:</strong></p>
-
-<p><strong>Identidad y Resistencia:</strong> Le dio voz a la historia negra de Colombia, que a menudo ha sido silenciada en los libros de texto, convirtiéndola en un himno de orgullo racial.</p>
-
-<p><strong>Impacto Musical:</strong> Es considerada una de las mejores canciones de salsa de todos los tiempos. El solo de piano de Chelito De Castro [03:34] es uno de los momentos más icónicos de la música tropical.</p>
-
-<p><strong>Conciencia Social:</strong> Logró que un mensaje de denuncia social fuera escuchado masivamente en fiestas y festivales, uniendo el entretenimiento con la comprensión histórica del país.</p>
-
-<h3>Recomendación: Totó la Momposina</h3>
-
-<p><strong>¿Por qué vale la pena conocerla?</strong></p>
-
-<p>
-Totó es la "cantadora" por excelencia. Ha dedicado su vida a rescatar y difundir la música de la Costa Caribe colombiana (cumbia, bullerengue, mapalé). Su aporte es fundamental porque preserva la tradición oral y musical de los pueblos de las orillas del río Magdalena, mezclando la herencia indígena y africana.
-</p>
-
-<p><strong>Muestra de su obra: "El Pescador"</strong></p>
-
-<p>
-Esta canción es un homenaje al hombre trabajador del río y es un ejemplo perfecto de la fuerza de los tambores y las voces de nuestra tierra.
-</p>
-
-</section>
-
-
-<section class="card" id="t5">
-<h2>Tarea 5</h2>
-<p>Contenido de la tarea 5.</p>
-</section>
-
-<section class="card" id="t6">
-<h2>Tarea 6</h2>
-<p>Contenido de la tarea 6.</p>
-</section>
-
-<section class="card" id="t7">
-<h2>Tarea 7</h2>
-<p>Contenido de la tarea 7.</p>
-</section>
-
-<section class="card" id="t8">
-<h2>Tarea 8</h2>
-<p>Contenido de la tarea 8.</p>
-</section>
-
-<section class="card" id="t9">
-<h2>Tarea 9</h2>
-<p>Contenido de la tarea 9.</p>
-</section>
-
-<section class="card" id="t10">
-<h2>Tarea 10</h2>
-<p>Contenido de la tarea 10.</p>
-</section>
+    <section id="t9">
+        <h2>9. Turismo Sostenible</h2>
+        <p>Para un turismo responsable se requiere: gestión de carga, infraestructura de bajo impacto y gobernanza comunitaria.</p>
+        <div class="card-grid">
+            <div class="card">
+                <h4>Nacional: Villa de Leyva</h4>
+                <p>Preservación colonial y riqueza paleontológica. Equilibrio entre historia y naturaleza.</p>
+            </div>
+            <div class="card">
+                <h4>Internacional: Jaraguá do Sul</h4>
+                <p>Referente en calidad de vida y promoción artística. Ejemplo de desarrollo industrial con alma musical.</p>
+            </div>
+        </div>
+    </section>
 
 </div>
 
 <footer>
-<p>Página académica sobre la Constitución de Colombia</p>
+    <p>&copy; 2026 - Portafolio Ético y Cultural. Creado para la asignatura de Ciudadanía.</p>
 </footer>
 
 </body>
