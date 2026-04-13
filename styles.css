@@ -1,0 +1,11 @@
+styles.css
+header h1 {
+  font-family: 'Playfair Display', serif;
+}
+<link rel="stylesheet" href="styles.css">
+<head>
+  <meta charset="UTF-8">
+  <title>Bitácora de Ciudadanía y Cultura</title>
+
+  <link rel="stylesheet" href="styles.css">
+</head>
